@@ -1,0 +1,4 @@
+EL documento presenta el paquete glossaries-extra con tree, lo que provoca que sea necesario compilar como sigue:
+pdflatex myDoc
+bib2gls myDoc
+pdflatex myDoc

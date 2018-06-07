@@ -1,0 +1,166 @@
+% Codificación: UTF-8
+%
+% Autor: Sebastian Sepulveda A.
+%        Facultad de Ciencias Físicas y Matemáticas
+%        Universidad de Chile
+%        sesepulveda@ug.uchile.cl
+
+\documentclass[letterpaper,12pt]{article}
+
+%%%%%%%%%%%% PREÁMBULO %%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{blindtext}
+\usepackage{imakeidx}
+\usepackage{multicol}
+\usepackage{anysize}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[colorlinks=true,linkcolor=magenta]{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{listings}
+\usepackage[symbols,
+  stylemods={tree},% loads glossaries-extra-stylemods to patch styles
+  record % using 'bib2gls'
+]{glossaries-extra}
+%para glosarios consultar bibliografia
+
+
+% assign titles to group labels:
+\glsxtrsetgrouptitle{greek}{Grupo 1}
+\glsxtrsetgrouptitle{latin}{Grupo 2}
+
+\GlsXtrLoadResources[
+ src={grupo1},
+ type=symbols,
+ group={greek},% assign group label
+ set-widest,% needed for 'alttree' styles
+ save-locations=false
+]
+
+\GlsXtrLoadResources[
+ src={grupo2},
+ type=symbols,
+ group={latin},% assign group label
+ set-widest,% needed for 'alttree' styles
+ save-locations=false
+]
+
+%Titulo y agregados
+\marginsize{2cm}{2cm}{1cm}{2cm}
+\title{\Huge\bfseries Documentación \texttt{Vpython}}
+\author{\Large FI2001-3 Mecánica 2018\\ Universidad de Chile}
+\date{Junio}
+
+% ======================= INICIO DEL DOCUMENTO =======================
+\begin{document}
+
+% ======================= pag 1 =======================
+% ======================= PORTADA =======================
+\pagestyle{empty}
+\maketitle
+\begin{abstract}
+El grupo de ``***'' surgió el año 2018 con la inciativa del profesor Alvaro Nuñez, junto con el apoyo del estudiante Rodrigo Jaeschke, para desarrollar animaciones de:
+\begin{itemize}
+\item sistemas de coordenadas, vectores unitarios, curvas de coordenadas constante, etc
+\item sistemas mecánicos sencillos, ilustrando coordenadas intrinsecas, velocidades, aceleraciones, etc
+\item sistemas más complejos... flujo de energía, deformaciones elásticas, etc. 
+\end{itemize}
+El grupo es conformado actualmente por estudiantes de segundo año de la especialidad de ingeniería, y está divididos en grupos de trabajo como el siguiente:
+\begin{itemize}
+	\item Grupo 1: Vale G, Palo V. y Martin M.
+	\item Grupo 2: Boris C., Seba S. y Bastián F.
+	\item Grupo 3: Bruno R., Tomás R y Feña S.
+\end{itemize}
+\end{abstract}
+\thispagestyle{empty} % no numera
+
+% ======================= TABLA DE CONTENIDOS pag 2 =======================
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+%Tablas
+\listoftables
+%Figuras
+\listoffigures
+%Glosario
+\printunsrtglossary[type=symbols,style=alttreegroup,title={Lista de simbolos}]
+\pagenumbering{arabic}
+% ======================= otros pag 3-- =======================
+\newpage
+Para el proyecto vamos a usar python 3.6 y vpython. Para descargar python 3.6 y vpython se recomienda descargar anaconda (es un paquete en el que viene python y muuuchos paquetes muy útiles) para python.
+
+\section{Gravitación}
+Explicación de simbolos que se ocuparán en los programas:
+
+Simbolos griegos: 
+ 
+Grupo 2: $\gls{chi}$, $\gls{alpha}$, $\gls{zeta}$, $\gls{lambda}$.
+
+Grupo 1: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
+$\gls{F}$.
+
+
+\begin{itemize}
+    \item Interpretado $\gls{delta}$,
+    \item Indentación obligatoria
+    \item Distingue mayúsculas - minúsculas
+    \item No hay declaración de variables (\textit{dynamic typing})
+    \item Orientado a objetos  
+    \item Garbage colector: quita los objetos a los que no haga referencia nada
+\end{itemize}
+
+\section{Cinematica}
+
+
+
+\newpage
+\begin{thebibliography}{X}
+	\bibitem{vpython} \textsc{Sitio web Vpython}\ --	\textit{Documentación y más}\ -- 	\url{http://vpython.org/}
+
+	\bibitem{glowscript} \textsc{Glowscript} \ --	\textit{Almacén de documentos, online}\ --  	\url{http://www.glowscript.org/}
+
+	\bibitem{githubgrupo} \textsc{Grupo en Github}\ --  	\textit{Archivos del grupo, Github}\ -- 	\url{https://github.com/vpythonfcfm}
+
+	\bibitem{gitlabgrupo} \textsc{Grupo en GitLab}\ --  	\textit{Archivos del grupo, GitLab}\ -- 	\url{https://gitlab.com/mecanica}
+
+	\bibitem{bdrive} \textsc{Drive}\\
+	\textit{Documentación en drive}\\
+	\url{https://drive.google.com/drive/folders/1NtJFtAmzxQd_YRu3f68Fnss4KQNrH-Un}
+
+	\bibitem{beneficios} \textsc{Programas utiles para desarrollar mejor los códigos}\\
+	\textit{Beneficios alumnos Uchile}\\
+	\url{https://www.u-cursos.cl/usuario/77a5152ba2963e5296264676485b1c05/mi_blog/o/23555}
+
+	\bibitem{Glosarios} \textsc{Principal de glosarios}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/glossaries-extra/glossaries-extra-manual.pdf}
+
+	\bibitem{Glosarios2} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://es.sharelatex.com/learn/Lists_of_tables_and_figures}
+
+	\bibitem{Glosarios3} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://tex.stackexchange.com/questions/255787/how-to-index-figures?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa}
+
+	\bibitem{Glosarios4} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://tex.stackexchange.com/questions/348640/how-to-effectively-use-list-of-symbols-for-a-thesis?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa}
+
+	\bibitem{Glosarios5} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://es.sharelatex.com/learn/Glossaries}
+
+	\bibitem{Glosarios6} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://github.com/nlct/bib2gls}
+
+	\bibitem{Glosarios7} \textsc{Principal de glosarios} y \textsc{H.D. Sherali}\\
+	\textit{Programacion lineal y flujo en redes}, segunda edicion\\
+	\url{https://ctan.org/pkg/bib2gls}
+
+\end{thebibliography}
+
+\end{document}
