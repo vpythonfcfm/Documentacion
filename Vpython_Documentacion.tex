@@ -6,9 +6,7 @@
 %        sesepulveda@ug.uchile.cl
 
 \documentclass[letterpaper,12pt]{article}
-
-%%%%%%%%%%%% PREÁMBULO %%%%%%%%%%%%%%%%%%%%%
-
+% ======================= Preambulo =======================
 \usepackage[utf8]{inputenc}
 \usepackage[spanish,es-tabla]{babel}
 \usepackage{blindtext}
@@ -21,13 +19,13 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{listings}
 \usepackage[symbols,
-  stylemods={tree},% loads glossaries-extra-stylemods to patch styles
-  record % using 'bib2gls'
+  stylemods={tree},
+  record 
 ]{glossaries-extra}
 %para glosarios consultar bibliografia
 
 
-% assign titles to group labels:
+%Se le asigna el titulo a los grupos del glosario
 \glsxtrsetgrouptitle{greek}{Grupo 1}
 \glsxtrsetgrouptitle{latin}{Grupo 2}
 
@@ -47,8 +45,8 @@
  save-locations=false
 ]
 
-%Titulo y agregados
 \marginsize{2cm}{2cm}{1cm}{2cm}
+%Titulo y agregados
 \title{\Huge\bfseries Documentación \texttt{Vpython}}
 \author{\Large FI2001-3 Mecánica 2018\\ Universidad de Chile}
 \date{Junio}
@@ -56,20 +54,19 @@
 % ======================= INICIO DEL DOCUMENTO =======================
 \begin{document}
 
-% ======================= pag 1 =======================
-% ======================= PORTADA =======================
+% ======================= PORTADA pag 1=======================
 \pagestyle{empty}
 \maketitle
 \begin{abstract}
-El grupo de ``***'' surgió el año 2018 con la inciativa del profesor Alvaro Nuñez, junto con el apoyo del estudiante Rodrigo Jaeschke, para desarrollar animaciones de:
+El grupo de ``Coordenadas uwu'' surgió el año 2018 con la inciativa del profesor Alvaro Nuñez, junto con el apoyo del estudiante Rodrigo Jaeschke, para desarrollar animaciones de:
 \begin{itemize}
-\item sistemas de coordenadas, vectores unitarios, curvas de coordenadas constante, etc
-\item sistemas mecánicos sencillos, ilustrando coordenadas intrinsecas, velocidades, aceleraciones, etc
-\item sistemas más complejos... flujo de energía, deformaciones elásticas, etc. 
+\item Sistemas de coordenadas, vectores unitarios, curvas de coordenadas constante, etc
+\item Sistemas mecánicos sencillos, ilustrando coordenadas intrinsecas, velocidades, aceleraciones, etc
+\item Sistemas más complejos... flujo de energía, deformaciones elásticas, etc. 
 \end{itemize}
-El grupo es conformado actualmente por estudiantes de segundo año de la especialidad de ingeniería, y está divididos en grupos de trabajo como el siguiente:
+El grupo es conformado actualmente por estudiantes de segundo año de la FCFM, y está divididos en 3 grupos de trabajos:
 \begin{itemize}
-	\item Grupo 1: Vale G, Palo V. y Martin M.
+	\item Grupo 1: Vale G., Palo V. y Martin M.
 	\item Grupo 2: Boris C., Seba S. y Bastián F.
 	\item Grupo 3: Bruno R., Tomás R y Feña S.
 \end{itemize}
@@ -89,8 +86,9 @@ El grupo es conformado actualmente por estudiantes de segundo año de la especia
 \pagenumbering{arabic}
 % ======================= otros pag 3-- =======================
 \newpage
-Para el proyecto vamos a usar python 3.6 y vpython. Para descargar python 3.6 y vpython se recomienda descargar anaconda (es un paquete en el que viene python y muuuchos paquetes muy útiles) para python.
+Para el proyecto vamos a usar python 3.6 y Vpython. Para descargar python 3.6 y vpython se recomienda descargar anaconda (es un paquete en el que viene python y muuuchos paquetes muy útiles) para python. 
 
+%EDITAR
 \section{Gravitación}
 Explicación de simbolos que se ocuparán en los programas:
 
@@ -101,7 +99,7 @@ Grupo 2: $\gls{chi}$, $\gls{alpha}$, $\gls{zeta}$, $\gls{lambda}$.
 Grupo 1: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
 $\gls{F}$.
 
-
+%EDITAR
 \begin{itemize}
     \item Interpretado $\gls{delta}$,
     \item Indentación obligatoria
