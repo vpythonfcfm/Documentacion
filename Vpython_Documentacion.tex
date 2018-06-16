@@ -26,13 +26,13 @@
 
 
 %Se le asigna el titulo a los grupos del glosario
-\glsxtrsetgrouptitle{greek}{Grupo 1}
-\glsxtrsetgrouptitle{latin}{Grupo 2}
+\glsxtrsetgrouptitle{grupo1}{Coordenadas}
+\glsxtrsetgrouptitle{grupo2}{Gravitación}
 
 \GlsXtrLoadResources[
  src={grupo1},
  type=symbols,
- group={greek},% assign group label
+ group={grupo1},% assign group label
  set-widest,% needed for 'alttree' styles
  save-locations=false
 ]
@@ -40,7 +40,7 @@
 \GlsXtrLoadResources[
  src={grupo2},
  type=symbols,
- group={latin},% assign group label
+ group={grupo2},% assign group label
  set-widest,% needed for 'alttree' styles
  save-locations=false
 ]
@@ -86,22 +86,46 @@ El grupo es conformado actualmente por estudiantes de segundo año de la FCFM, y
 \pagenumbering{arabic}
 % ======================= otros pag 3-- =======================
 \newpage
-Para el proyecto vamos a usar python 3.6 y Vpython. Para descargar python 3.6 y vpython se recomienda descargar anaconda (es un paquete en el que viene python y muuuchos paquetes muy útiles) para python. 
+Para el proyecto vamos a usar Python 3.6 y su paquete Vpython. Para descargar Python 3.6 y vpython se recomienda descargar anaconda (es un paquete en el que viene python y muuuchos paquetes muy útiles) para python. 
 
 %EDITAR
+\section{Coordenadas y Cinematica}
+\subsection*{Problema de la gaviota}
+%GRUPO1
+La fuerza es perpendicular a la superficie de las alas extendidas de la gaviota. 
+Su magnitud depende de varios factores pero esencialmente es proporcional al cuadrado de la rapidez $|L| = kv^2$,
+donde $k$ es una constante de proporcionalidad que asumiremos fija y conocida.
+
+\begin{enumerate}
+\item La gaviota, cuya masa es conocida e igual a $m$, desea surcar, a una altura $H$, 
+una trayectoria circular horizontal de radio $R$ a velocidad angular constante.
+	\begin{enumerate}
+	\item ¿Que valor debe tomar la inclinacion, $\beta$, de la gaviota?, $\beta$, 
+	es el angulo definido desde la vertical hasta la normal al plano de las alas de la gaviota.
+	\item Determine el valor necesario al cual la gaviota debe mantener la velodicidad angular
+	\end{enumerate}
+\item Para lanzarse al mar, la gaviota inicia un descenso en forma de helice. 
+ie. el radio $R$ y la velocidad angular siguen siendo constantes pero la gaviota 
+adquiere ademas una velocidad vertical constante, $dz$, en direccion hacia el mar
+	\begin{enumerate}
+	\item si conocemos $R$ y $dz$, ¿ Que valor debe tomar la velocidad angular?
+	\item Determine la inclinacion $\beta$ de la gaviota necesaria para esta trayectoria
+	\end{enumerate}
+\end{enumerate}
+$\gls{chi}$, $\gls{alpha}$, $\gls{zeta}$, $\gls{lambda}$, $\gls{delta}$.
+
+
+
+
 \section{Gravitación}
 Explicación de simbolos que se ocuparán en los programas:
-
-Simbolos griegos: 
- 
-Grupo 2: $\gls{chi}$, $\gls{alpha}$, $\gls{zeta}$, $\gls{lambda}$.
-
-Grupo 1: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
-$\gls{F}$.
-
+\subsection*{Problema de orbitas}
+%GRUPO2
+$\gls{rho}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
+$\gls{F}$. 
 %EDITAR
 \begin{itemize}
-    \item Interpretado $\gls{delta}$,
+    \item Interpretado ,
     \item Indentación obligatoria
     \item Distingue mayúsculas - minúsculas
     \item No hay declaración de variables (\textit{dynamic typing})
@@ -109,7 +133,9 @@ $\gls{F}$.
     \item Garbage colector: quita los objetos a los que no haga referencia nada
 \end{itemize}
 
-\section{Cinematica}
+\section{Trabajo y energia}
+
+\section{Movimiento relativo y sistemas no inerciales}
 
 
 
