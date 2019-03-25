@@ -1,4 +1,4 @@
 EL documento presenta el paquete glossaries-extra con tree, lo que provoca que sea necesario compilar como sigue:
-pdflatex nombreDocumento
-bib2gls nombreDocumento
-pdflatex nombreDocumento
+pdflatex nombreDocumento or pdflatex --jobname=<dir>\<doc_name_ppal> Vpython_Documentacion.tex
+bib2gls nombreDocumento or bib2gls <dir>\<doc_name_ppal>.aux 
+pdflatex nombreDocumento or pdflatex --jobname=<dir>\<doc_name_ppal> Vpython_Documentacion.tex

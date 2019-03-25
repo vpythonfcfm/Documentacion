@@ -1,0 +1,104 @@
+\glsnoexpandfields
+\bibglstertiaryprefixlabel{tertiary.}
+\bibglsdualprefixlabel{dual.}
+\bibglsprimaryprefixlabel{}
+\providecommand{\bibglsseesep}{, }
+
+\providecommand{\bibglsseealsosep}{, }
+
+\providecommand{\bibglsaliassep}{, }
+
+\providecommand*{\bibglsflattenedhomograph}[2]{#1}
+\providecommand{\bibglsnewentry}[4]{%
+ \longnewglossaryentry*{#1}{name={#3},#2}{#4}%
+}
+
+\bibglsnewentry{a}%
+{sort={a|},
+type={symbols}}%
+{{}\ensuremath{a}}%
+{aceleracion}
+
+
+\bibglsnewentry{F}%
+{sort={F|},
+type={symbols}}%
+{{}\ensuremath{F}}%
+{fuerza}
+
+
+\bibglsnewentry{t}%
+{sort={t|},
+type={symbols}}%
+{{}\ensuremath{t}}%
+{tiempo}
+
+
+\bibglsnewentry{v}%
+{sort={v|},
+type={symbols}}%
+{{}\ensuremath{v}}%
+{velocidad}
+
+
+\bibglsnewentry{rho}%
+{sort={𝜌|},
+type={symbols}}%
+{{}\ensuremath{\rho}}%
+{radio}
+
+
+\ifdef\glsxtrSetWidest
+{
+  \providecommand*{\bibglssetwidest}[2]{%
+    \glsxtrSetWidest{}{#1}{#2}%
+  }
+  \providecommand*{\bibglssetwidestfortype}[3]{%
+    \glsxtrSetWidest{#1}{#2}{#3}%
+  }
+}
+{
+  \ifdef\glsupdatewidest
+  {
+    \providecommand*{\bibglssetwidest}[2]{%
+      \glsupdatewidest[#1]{#2}%
+    }
+    \providecommand*{\bibglssetwidestfortype}[3]{%
+      \apptoglossarypreamble[#1]{\glsupdatewidest[#2]{#3}}%
+    }
+  }
+  {
+    \providecommand*{\bibglssetwidest}[2]{%
+      \glssetwidest[#1]{#2}%
+    }
+    \providecommand*{\bibglssetwidestfortype}[3]{%
+      \apptoglossarypreamble[#1]{\glssetwidest[#2]{#3}}%
+    }
+  }
+}
+\ifdef\glsxtrSetWidestFallback
+{
+  \providecommand*{\bibglssetwidestfallback}[1]{%
+    \glsxtrSetWidestFallback{2}{#1}%
+  }
+  \providecommand*{\bibglssetwidesttoplevelfallback}[1]{%
+    \glsxtrSetWidestFallback{0}{#1}%
+  }
+}
+{
+  \providecommand*{\bibglssetwidestfallback}[1]{%
+    \glsFindWidestLevelTwo[#1]%
+  }
+  \providecommand*{\bibglssetwidesttoplevelfallback}[1]{%
+    \glsFindWidestTopLevelName[#1]%
+  }
+}
+\providecommand*{\bibglssetwidestfortypefallback}[1]{%
+  \apptoglossarypreamble[#1]{\bibglssetwidestfallback{#1}}%
+}
+\providecommand*{\bibglssetwidesttoplevelfortypefallback}[1]{%
+  \apptoglossarypreamble[#1]{\bibglssetwidesttoplevelfallback{#1}}%
+}
+\bibglssetwidestfortype{symbols}{0}{\glsentryname{rho}}
+
+

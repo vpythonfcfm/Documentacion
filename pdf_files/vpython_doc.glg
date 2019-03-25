@@ -1,0 +1,89 @@
+bib2gls version 1.8 (2018-11-30)
+Reading pdf_files\vpython_doc.aux
+TeX character encoding: UTF-8
+Initialising resource vpython_doc.glstex.
+Warning: Resource option group requires application switch --group
+Initialising resource vpython_doc-1.glstex.
+Warning: Resource option group requires application switch --group
+Parsing bib files for resource vpython_doc.glstex.
+Default encoding: not set
+Detected encoding: UTF-8
+Reading grupo1.bib
+Encoding: UTF-8
+Parsing bib files for resource vpython_doc-1.glstex.
+Default encoding: not set
+Detected encoding: UTF-8
+Reading grupo2.bib
+Encoding: UTF-8
+Cross-resource references allowed.
+Processing resource vpython_doc.glstex.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Processing resource vpython_doc-1.glstex.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Inserting empty group in front of \ensuremath to protect it from mfirstuc.
+Selecting entries for resource vpython_doc.glstex.
+texparserlib: {}\ensuremath{\chi} -> ?
+texparserlib: {}\ensuremath{\alpha} -> ?
+texparserlib: {}\ensuremath{\zeta} -> ?
+texparserlib: {}\ensuremath{\lambda} -> ?
+texparserlib: {}\ensuremath{\delta} -> ?
+Writing C:\Users\Sebastian\Desktop\Vpython\Vpython_Documentacion\Documentacion\pdf_files\vpython_doc.glstex
+Encoding: UTF-8
+alpha
+Calculating width of name field for entry 'alpha'
+texparserlib: {}\ensuremath{\alpha} -> ?
+Calculated width of '?': 6,375
+delta
+Calculating width of name field for entry 'delta'
+texparserlib: {}\ensuremath{\delta} -> ?
+Calculated width of '?': 5,766
+zeta
+Calculating width of name field for entry 'zeta'
+texparserlib: {}\ensuremath{\zeta} -> ?
+Calculated width of '?': 5,078
+lambda
+Calculating width of name field for entry 'lambda'
+texparserlib: {}\ensuremath{\lambda} -> ?
+Calculated width of '?': 6,031
+chi
+Calculating width of name field for entry 'chi'
+texparserlib: {}\ensuremath{\chi} -> ?
+Calculated width of '?': 7,156
+5 entries written to C:\Users\Sebastian\Desktop\Vpython\Vpython_Documentacion\Documentacion\pdf_files\vpython_doc.glstex.
+Selecting entries for resource vpython_doc-1.glstex.
+texparserlib: {}\ensuremath{\rho} -> ?
+texparserlib: {}\ensuremath{v} -> v
+texparserlib: {}\ensuremath{a} -> a
+texparserlib: {}\ensuremath{t} -> t
+texparserlib: {}\ensuremath{F} -> F
+Writing C:\Users\Sebastian\Desktop\Vpython\Vpython_Documentacion\Documentacion\pdf_files\vpython_doc-1.glstex
+Encoding: UTF-8
+a
+Calculating width of name field for entry 'a'
+texparserlib: {}\ensuremath{a} -> a
+Calculated width of 'a': 4,875
+F
+Calculating width of name field for entry 'F'
+texparserlib: {}\ensuremath{F} -> F
+Calculated width of 'F': 6
+t
+Calculating width of name field for entry 't'
+texparserlib: {}\ensuremath{t} -> t
+Calculated width of 't': 3,234
+v
+Calculating width of name field for entry 'v'
+texparserlib: {}\ensuremath{v} -> v
+Calculated width of 'v': 5,797
+rho
+Calculating width of name field for entry 'rho'
+texparserlib: {}\ensuremath{\rho} -> ?
+Calculated width of '?': 6,062
+5 entries written to C:\Users\Sebastian\Desktop\Vpython\Vpython_Documentacion\Documentacion\pdf_files\vpython_doc-1.glstex.
+10 entries written in total.
